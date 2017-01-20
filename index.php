@@ -1,4 +1,6 @@
-<?php  ?>
+<?php
+require_once 'base_php/menu.php';
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
