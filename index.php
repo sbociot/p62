@@ -1,5 +1,5 @@
 <?php
-require_once 'base_php/menu.php';
+
  ?>
 <!DOCTYPE html>
 <html>
@@ -10,7 +10,9 @@ require_once 'base_php/menu.php';
   </head>
   <body>
     <header>
-      <?= $menu ?>
+    <?php
+require_once 'base_php/menu.php';
+     ?>
     </header>
   </body>
 </html>
