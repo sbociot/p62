@@ -5,7 +5,8 @@ require_once 'base_php/menu.php';
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Electronic Store</title>
+    <title>YS Electronic Store</title>
+    <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
     <header>
