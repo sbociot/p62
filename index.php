@@ -8,6 +8,8 @@ require_once 'base_php/menu.php';
     <title>Electronic Store</title>
   </head>
   <body>
-    <p>hello!</p>
+    <header>
+      <?= $menu ?>
+    </header>
   </body>
 </html>
