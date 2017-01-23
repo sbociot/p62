@@ -5,7 +5,7 @@ $menu = array(
   'Deal' => 'deal.php',
   'Service' =>'servive.php',);
  ?>
- <main class="menu">
+ <main class="menu_principal">
    <nav>
      <?php foreach ($menu as $key => $value) {
        echo "<li>

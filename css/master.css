@@ -3,3 +3,10 @@
   list-style: none;
   font-size: 18px;
 }
+/*menu principal edition*/
+.menu_principal > nav > li{
+  display: inline-block;
+}
+.menu_principal > nav > li:not(:last-of-type){
+  margin-left: 10px;
+}
