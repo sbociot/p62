@@ -2,7 +2,7 @@
 $en_reception = array_key_exists('nom', $_POST)
     && array_key_exists('prenom', $_POST)
     && array_key_exists('email', $_POST);
-//formulaire
+//formulaire mmm
 
 // Réception du nom
 $nom = '';
