@@ -97,7 +97,7 @@ if ($en_reception && $nom_valide && $prenom_valide && $email_valide && $Code_pos
             </p>
         </fieldset>
     </div>
-    <input type="submit" value="Envoyer le message" />
+    <input type="submit" value="passer la reservation" />
 </form>
 
 
