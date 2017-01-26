@@ -6,5 +6,5 @@ require_once'base_php/menu.php';
 /****Contenu principal****/
 //fin du body
 require_once'base_php/page_end.php';
-
+echo :
  ?>
