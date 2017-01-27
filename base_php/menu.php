@@ -3,7 +3,8 @@ $menu = array(
   'Acceuil' =>'index.php',
   'Shop' =>'shop.php',
   'Deal' => 'deal.php',
-  'Service' =>'servive.php',);
+  'Service' =>'servive.php',
+    'Reservation' =>'formulaire.php',);
  ?>
  <main class="menu_principal">
    <nav>
