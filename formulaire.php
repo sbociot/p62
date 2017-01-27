@@ -1,4 +1,6 @@
 <?php
+
+
 $en_reception = array_key_exists('nom', $_POST)
     && array_key_exists('prenom', $_POST)
     && array_key_exists('email', $_POST);
@@ -45,15 +47,11 @@ if ($en_reception && $nom_valide && $prenom_valide && $email_valide && $Code_pos
 
 
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>formulaire reservation</title>
-</head>
-<body>
-<h1>formulaire reservation</h1>
 
+<?php
+require_once 'base_php/base_header.php';
+require_once 'base_php/menu.php';
+?>
 <form method="post" action="envoyer.php">
 
     <div id="coordonnees">
@@ -99,7 +97,6 @@ if ($en_reception && $nom_valide && $prenom_valide && $email_valide && $Code_pos
     </div>
     <input type="submit" value="passer la reservation" />
 </form>
-
-
-</body>
-</html>
+<?php
+require_once 'base_php/page_end.php';
+?>
