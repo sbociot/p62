@@ -31,6 +31,20 @@ if (array_key_exists('email', $_POST)) {
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
     $email_valide = (false !== filter_var($email, FILTER_VALIDATE_EMAIL));
 }
+
+$telephone = '';
+$telephone_valide= true;
+if (array_key_exists('telephone', $_POST)&& ($en_reception && !empty($telephone))) {
+    if (preg_match("#(\+[0-9]{2}\([0-9]\))?[0-9]{10}#", $telephone)) {
+        return 'format_invalide';
+
+
+    }
+    $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
+    $email_valide = (false !== filter_var($email, FILTER_VALIDATE_EMAIL));
+}
+
+
 $Code_postal = '';
 $Code_postal_valide = true;
 if ($en_reception && empty($Code_postal)) {
@@ -79,7 +93,7 @@ require_once 'base_php/menu.php';
             </p>
             <p>
                 <label for="E_mail">E-mail* :</label> <br />
-                <input type="E_mail" name="E_mail" id="E_mail" size="40" required />
+                <input type="E_mail" name="E_mail" id="E_mail" size="40" pattern="pattern="[a-zA-z0-9.-]+\@[a-zA-z0-9.-]+.[a-zA-Z]+" required />
             </p>
             <p>
                 <label for="date">date de debut:</label> <br />
@@ -87,7 +101,7 @@ require_once 'base_php/menu.php';
             </p>
             <p>
                 <label for="Telephone">Téléphone* :</label> <br />
-                <input type="tel" name="Telephone" id="Telephone" placeholder="000 000 0000" size="20" required />
+                <input type="tel" name="Telephone" id="Telephone" placeholder="000 000 0000" pattern=""[0-9]{10}" size="20" required />
             </p>
             <p>
                 <label for="nombrepersone">nombre de personne:</label> <br />
