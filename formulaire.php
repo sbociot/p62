@@ -84,7 +84,7 @@ require_once 'base_php/menu.php';
                 <textarea name="Adresse" id="Adresse" rows="3" cols="25" required ></textarea>
             </p>
             <p>
-                <label for="Code_postal">Code postal :</label> <br />
+                <label for="Code_postal">Code postal :</label> <br /> 
                 <input type="text" name="Code_postal" id="Code_postal" size="15" required />
             </p>
             <p>
