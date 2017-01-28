@@ -1,7 +1,7 @@
 <?php
 $menu = array(
   'Acceuil' =>'index.php',
-  'Shop' =>'shop.php',
+  'Shop' =>'catalogue.php',
   'Deal' => 'deal.php',
   'Service' =>'servive.php',
     'Reservation' =>'formulaire.php',);

@@ -25,7 +25,7 @@ if ($res && ($res->num_rows > 0)) {
     }
 }
 // Dump de toutes le données
-var_dump($data);
+// var_dump($data);
 
 // Que les article de la catégorie 1
 // $query_str = 'SELECT * FROM article WHERE category_id=1'; // Sélection des articles de categorie 1
@@ -39,5 +39,15 @@ var_dump($data);
 //     }
 // }
 // // Dump de toutes le données
-var_dump($data);
+// var_dump($data);
 //
+$myicon = array();
+$query_str = 'SELECT * FROM icon';
+$result = $mysqli->query($query_str);
+if ($result && ($result ->num_rows > 0)) {
+    while ($fontawsome = $result ->fetch_assoc()) {
+        $myicon[$fontawsome['id']] = $fontawsome;
+        // $categories[$article_cat['id']] = $article_cat;
+    }
+}
+// Dump de toutes le données
