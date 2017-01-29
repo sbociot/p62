@@ -14,6 +14,8 @@ define('ARTICLE_IMG_PATH', 'upload_images/');
 <div class="image_en_tete">
   <img src="upload_images/computer.jpg" alt="computer" />
 </div>
+<h3>Nos Gadgets</h3>
+<div class="wrapper">
 <?php foreach ($myicon as $key => $value) {?>
   <div class="main_cat">
     <ul>
@@ -23,5 +25,5 @@ define('ARTICLE_IMG_PATH', 'upload_images/');
     </ul>
   </div>
 <?php }  ?>
-
+</div>
 <?php require_once'base_php/page_end.php';  ?>
