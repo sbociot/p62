@@ -11,7 +11,7 @@
     height: 400px;
 }
 .wrapper{
-  width: 60%;
+  width: 100%;
   background:#ececec;
   border-radius: 15px;
 }
@@ -25,18 +25,20 @@ h3{
   margin: 15px;
 }
 .main_cat:hover{
-  background: white;
+  background: #F6F6F5;
+    border-radius: 10px;
 }
-.wrapper> .main_cat{
+.wrapper > a >.main_cat{
   display: inline-block;
+
 
 }
 .main_cat >ul> li:nth-of-type(2){
   padding: 10px;
   margin-left: -40px;
 }
-.main_cat >ul> li:first-of-type{
-  text-align: center;
+.main_cat >ul > li >img{
+  width: 80%;
 }
 
 #ececec;

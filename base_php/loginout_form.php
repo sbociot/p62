@@ -1,7 +1,5 @@
 <?php
-/**
- * Présente le formualire connexion / déconnexion
- */
+require_once'base_php/check_connect.php';
 ?>
 <?php if (is_logged_in()) { ?>
     <span>Salut <?= $_SESSION[PS_USERNAME] ?> !</span>
