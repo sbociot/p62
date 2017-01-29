@@ -16,7 +16,7 @@ define('ARTICLE_IMG_PATH', 'upload_images/');
         <?php foreach ($myicon as $key => $value) {?>
         <a href="?<?= $value['name']?>"><li>
           <ul class="categorie_aff">
-            <li><img src="<?=  ARTICLE_IMG_PATH,$value['image']?>" alt="<?=utf8_encode($value['name'])?>">
+            <li><img class="icon_font" src="<?=  ARTICLE_IMG_PATH,$value['image']?>" alt="<?=utf8_encode($value['name'])?>">
             <li><?=utf8_encode($value['name'])?></li>
           </ul>
         </li></a>
@@ -25,7 +25,7 @@ define('ARTICLE_IMG_PATH', 'upload_images/');
   </div>
   <div class="rapid_nav">
     <ul>
-      
+
     </ul>
   </div>
 </main>

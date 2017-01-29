@@ -4,17 +4,25 @@
   font-size: 18px;
   font-family: 'Arimo', sans-serif;
   text-decoration: none;
+
 }
-:visited{
-  color: inherit;
+#logo{
+  width: 10%;
+}
+.icon_font{
+  resize: 20px;
 }
 /*menu principal edition*/
 .menu_principal{
   background: navy;
   padding: 10px;
+
 }
 .menu_principal > nav > li{
   display: inline-block;
+
+}
+.menu_principal > nav > li > a {
   color: white;
 }
 .menu_principal >nav > li:not(:last-of-type){
@@ -39,4 +47,9 @@
   margin-left: 30%;
   margin-top: 5%;
 
+}
+/*searc bar style*/
+/*******/
+.form-wrapper{
+  display: contents;
 }
