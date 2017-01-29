@@ -6,5 +6,5 @@ require_once'base_php/base_header.php';
 require_once'base_php/menu.php';
 ?>
 <div class="affichage_produit">
-  
+  <?php var_dump($_SERVER['QUERY_STRING']); ?>
 </div>
