@@ -11,6 +11,17 @@ require_once'file_base/dbacces.php';
 define('ARTICLE_IMG_PATH', 'upload_images/');
 // var_dump($_SERVER['QUERY_STRING']);
  ?>
-<?php require_once 'base_php/loginout_form.php' ?>
+<div class="image_en_tete">
+  <img src="upload_images/computer.jpg" alt="computer" />
+</div>
+<?php foreach ($myicon as $key => $value) {?>
+  <div class="main_cat">
+    <ul>
+      <li><?= $value['name'] ?></li>
+      <li><img src="<?= ARTICLE_IMG_PATH,$value['image']?>" alt=""/></li>
+      <li><a href="?<?=$value['name'] ?>">Plus</a></li>
+    </ul>
+  </div>
+<?php }  ?>
 
 <?php require_once'base_php/page_end.php';  ?>

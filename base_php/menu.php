@@ -19,8 +19,7 @@ $menu = array(
        <input type="text" id="search" placeholder="Search for..." required>
        <input type="submit" value="go" id="submit">
 </form>
-
-
+<?php require_once 'base_php/loginout_form.php' ?>
 <li><a href="#"><i class="fa fa-cart-plus" style="font-size:35px;color:black"></i></a></li>
    </nav>
  </main>
