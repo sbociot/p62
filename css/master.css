@@ -12,7 +12,7 @@
 }
 .wrapper{
   width: 100%;
-  background:#ececec;
+  background:#025E90;
   border-radius: 15px;
 }
 h3{
@@ -38,7 +38,7 @@ h3{
 }
 .main_cat >ul> li:nth-of-type(2){
   padding: 10px;
-  margin-left: -40px;
+
 }
 .main_cat >ul > li >img{
   width: 80%;
