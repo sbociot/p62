@@ -66,8 +66,9 @@ if ($en_reception && $nom_valide && $prenom_valide && $email_valide && $Code_pos
 require_once 'base_php/base_header.php';
 require_once 'base_php/menu.php';
 ?>
-<form method="post" action="envoyer.php">
 
+<form method="post" action="envoyer.php">
+    <h1>reservation</h1>
     <div id="coordonnees">
         <fieldset>
             <legend>Vos coordonnées</legend>
@@ -84,7 +85,7 @@ require_once 'base_php/menu.php';
                 <textarea name="Adresse" id="Adresse" rows="3" cols="25" required ></textarea>
             </p>
             <p>
-                <label for="Code_postal">Code postal :</label> <br /> 
+                <label for="Code_postal">Code postal :</label> <br />
                 <input type="text" name="Code_postal" id="Code_postal" size="15" required />
             </p>
             <p>
